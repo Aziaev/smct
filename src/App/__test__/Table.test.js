@@ -42,7 +42,20 @@ describe('when props passed', () => {
   })
 
   it('should render all passed categories', () =>{
-    const categories = component.find('table__category_item');
-    console.log(categories.debug())
+    const categories = component.find('div.table__category_item');
+    expect(categories).toHaveLength(initialValues.length)
+    categories.map((cat, index) =>
+      expect(cat.find('div.table__category_item__title').text()).toBe(initialValues[index].name)
+      )
+  })
+
+  it('should render render DeleteButton for each category', () =>{
+    const delButtons = component.find('DeleteButton');
+    expect(delButtons).toHaveLength(initialValues.length)
+  })
+
+  it('should render Add category button', () =>{
+    const Button = component.find('Button');
+    expect(Button.at(18).prop('children')).toEqual('Add category +')
   })
 });
