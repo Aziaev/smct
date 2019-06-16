@@ -13,5 +13,3 @@ export default function DeleteButton({ name, onClick }) {
     </button>
   );
 }
-
-DeleteButton.
