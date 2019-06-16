@@ -3,7 +3,7 @@ import './index.css';
 import Header from './Header';
 import Footer from './Footer';
 import Table from './Table';
-import { initialValue } from './constants';
+import { initialValues } from './constants';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         description="Category and keyword manager"
       />
       <Table
-        initialValue={initialValue}
+        initialValues={initialValues}
       />
       <Footer
         title="Github link"

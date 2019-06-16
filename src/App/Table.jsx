@@ -3,13 +3,13 @@ import './Table.css';
 import Button from './components/Button';
 import DeleteButton from './components/DeleteButton';
 
-function Table({ initialValue }) {
-  const [categories, updateCategories] = useState(initialValue);
-  // Category
+function Table({ initialValues }) {
+  const [categories, updateCategories] = useState(initialValues);
+  // Hooks for Categories
   const [categoryInputIsOpen, toggleCategoryInput] = useState(false);
   const [categoryInputValue, changeCategoryInputValue] = useState('');
   const categoryInput = useRef(null);
-  // Keywords
+  // Hooks for Keywords
   const [openedKeywordInput, toggleKeyworInput] = useState(false);
   const [keywordInputValue, changeKeywordInputValue] = useState('');
   const keywordInput = useRef(null);
@@ -100,7 +100,7 @@ function Table({ initialValue }) {
                       name={category.name}
                       onClick={handleCategoryDeleteButton}
                     >
-                                            ✕
+                      ✕
                     </DeleteButton>
                   </div>
                 </td>
@@ -130,24 +130,24 @@ function Table({ initialValue }) {
                         color="accept"
                         disabled={!keywordInputValue}
                       >
-                                                Save
+                        Save
                       </Button>
                       <Button
                         color="reject"
                         onClick={handleKeywordCancelButton}
                       >
-                                                Cancel
+                        Cancel
                       </Button>
                     </div>
                   ) : (
-                    <Button
-                      type="button"
-                      onClick={handleKeywordAddButton}
-                      name={category.name}
-                    >
-                                                +
+                      <Button
+                        type="button"
+                        onClick={handleKeywordAddButton}
+                        name={category.name}
+                      >
+                        +
                     </Button>
-                  )}
+                    )}
                 </td>
               </tr>
             ))}
@@ -171,22 +171,22 @@ function Table({ initialValue }) {
                 color="accept"
                 disabled={!categoryInputValue}
               >
-                                Save
+                Save
               </Button>
               <Button
                 color="reject"
                 onClick={handleCategoryCancelButton}
               >
-                                Cancel
+                Cancel
               </Button>
             </>
           ) : (
-            <Button
-              onClick={handleCategoryAddButton}
-            >
-                                Add category +
+              <Button
+                onClick={handleCategoryAddButton}
+              >
+                Add category +
             </Button>
-          )}
+            )}
         </div>
       </form>
     </div>

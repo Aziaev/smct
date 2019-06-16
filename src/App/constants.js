@@ -1,5 +1,5 @@
 /* eslint-disable import/prefer-default-export */
-export const initialValue = [
+export const initialValues = [
   {
     name: 'Cars',
     keywords: ['Audi', 'BMW', 'Tires'],
