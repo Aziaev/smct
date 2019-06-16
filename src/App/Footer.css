@@ -1,3 +1,11 @@
 .link {
-    color: #61dafb;
+    color: grey;
   }
+
+.footer  {
+  padding: .5rem;
+  position: fixed;
+  bottom:0;
+  left: 0;
+  right:0;
+}

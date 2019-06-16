@@ -7,18 +7,93 @@
     font-size: calc(10px + 1vmin);
   }
   
-  .table{
-    text-align: left;
-  }
-  
-  .table__th {
-    padding: .5rem;
-  }
-  
-  .table__td {
-    padding: .5rem;
-  }
-  
-  .category_input {
-    text-align: left;
-  }
+.table{
+  text-align: left;
+  border-spacing: 0;
+}
+
+th, table {
+  border-bottom: 1px solid black;
+  border-collapse: collapse;
+}
+
+.table__th {
+  padding: .5rem;
+}
+
+.table__th__categories {
+  width: 130px;
+  padding: .5rem;
+}
+
+.table__th__keywords {
+  width: 450px;
+  padding: .5rem;
+}
+
+.table__td {
+  padding: .5rem;
+  vertical-align : top;
+  max-width: 130px;
+}
+
+.category_input {
+  text-align: left;
+  padding: .5rem;
+}
+
+.table__add_keyword_input_group {
+  display: inline-block;
+}
+
+.table__category_item {
+  display: table;
+  float: left;
+}
+
+.table__category_item__title {
+  max-width: 100px;
+  width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display:table-cell;
+  vertical-align:middle;
+  float: left;
+}
+
+.table__delete_category_button {
+  border: 0;
+}
+.table__delete_category_button:focus {
+  outline-color: lightgray;
+  outline-style: auto;
+  outline-width: 1px;
+}
+.table__delete_category_button:active {
+  outline-color: grey;
+  outline-style: auto;
+  outline-width: 1px;
+}
+
+.btn {
+  text-align:center;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: calc(10px + 1vmin);
+  border: 0;
+  color: black;
+  border-radius: 0px;
+  padding: 0;
+}
+
+.btn:hover {
+  color: #6b6b6b;
+}
+
+.btn:active {
+  color: #6b6b6b;
+}
+
+.btn__category {
+  margin-right: 1rem;
+}

@@ -3,14 +3,16 @@ import './Footer.css';
 
 function Footer() {
     return (
-        <a
-            className="link"
-            href="https://github.com/Aziaev"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Github link
+        <div className="footer">
+            <a
+                className="link"
+                href="https://github.com/Aziaev"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Github link
         </a>
+        </div>
     );
 }
 

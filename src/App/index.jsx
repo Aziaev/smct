@@ -3,6 +3,7 @@ import './index.css';
 import Header from './Header';
 import Footer from './Footer';
 import Table from './Table';
+import {initialValue} from './constants'
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
         name="SM Code task"
         description="Category and keyword manager"
       />
-      <Table />
+      <Table
+        initialValue={initialValue}
+      />
       <Footer />
     </div>
   );
