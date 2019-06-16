@@ -9,7 +9,7 @@ export default function DeleteButton({ name, onClick }) {
       name={name}
       onClick={onClick}
     >
-            ✕
+     ✕
     </button>
   );
 }
