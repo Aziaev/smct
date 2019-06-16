@@ -18,9 +18,5 @@ export const initialValue = [
     {
       name: 'Drinks',
       keywords: ['tea', 'coffee', 'water']
-    },
-    {
-      name: 'Very very very very very very very very very long named category',
-      keywords: ['very very very very very very very very long keyword']
     }
   ]

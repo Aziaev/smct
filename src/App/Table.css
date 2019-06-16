@@ -61,61 +61,6 @@ th, table {
   float: left;
 }
 
-.table__delete_category_button {
-  border: 0;
-}
-.table__delete_category_button:focus {
-  outline-color: lightgray;
-  outline-style: auto;
-  outline-width: 1px;
-}
-.table__delete_category_button:active {
-  outline-color: grey;
-  outline-style: auto;
-  outline-width: 1px;
-}
-
-.btn {
-  text-align:center;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: calc(10px + 1vmin);
-  border: 0;
-  color: black;
-  border-radius: 0px;
-  padding: 0;
-}
-
-.btn:hover {
-  color: #6b6b6b;
-}
-
-.btn:active {
-  color: #6b6b6b;
-}
-
-.btn__category {
-  margin-right: 1rem;
-}
-
-.btn__accept {
-  margin-left: .5rem;
-  color: #009688;
-}
-
-.btn__accept:hover {
-  color: #4caf50;
-}
-
-.btn__reject {
-  margin-left: .5rem;
-  color: #f44336;
-}
-
-.btn__reject:hover {
-  color: #ff5722;
-}
-
 .table__input {
   border: 0;
   outline: 0;

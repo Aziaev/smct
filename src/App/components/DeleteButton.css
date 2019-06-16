@@ -1,0 +1,15 @@
+.table__delete_category_button {
+    border: 0;
+}
+
+.table__delete_category_button:focus {
+    outline-color: lightgray;
+    outline-style: auto;
+    outline-width: 1px;
+}
+
+.table__delete_category_button:active {
+    outline-color: grey;
+    outline-style: auto;
+    outline-width: 1px;
+}

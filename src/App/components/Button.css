@@ -1,0 +1,45 @@
+.btn {
+    text-align:center;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: calc(10px + 1vmin);
+    border: 0;
+    color: black;
+    border-radius: 0px;
+    padding: 0;
+    margin-right: .5rem;
+  }
+  
+.btn:hover {
+    color: #6b6b6b;
+}
+
+.btn:active {
+    color: #6b6b6b;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn__category {
+    margin-right: 1rem;
+}
+
+.btn__accept {
+    margin-left: .5rem;
+    color: #009688;
+}
+
+.btn__accept:hover {
+color: #4caf50;
+}
+
+.btn__reject {
+margin-left: .5rem;
+color: #f44336;
+}
+
+.btn__reject:hover {
+color: #ff5722;
+}
