@@ -3,12 +3,12 @@ import './index.css';
 import Header from './Header';
 import Footer from './Footer';
 import Table from './Table';
-import {initialValue} from './constants'
+import { initialValue } from './constants';
 
 function App() {
   return (
     <div className="container">
-      <Header 
+      <Header
         name="SM Code task"
         description="Category and keyword manager"
       />
