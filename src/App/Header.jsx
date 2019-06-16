@@ -1,12 +1,12 @@
 import React from 'react';
 import './Header.css';
 
-function Header() {
+function Header({name, description}) {
 
   return (
       <header className="header">
-        <p>SMCT</p>
-        <small>Keyword Manager</small>
+        <p>{name}</p>
+        <small>{description}</small>
       </header>
   );
 }
