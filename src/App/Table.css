@@ -97,3 +97,28 @@ th, table {
 .btn__category {
   margin-right: 1rem;
 }
+
+.btn__accept {
+  margin-left: .5rem;
+  color: #009688;
+}
+
+.btn__accept:hover {
+  color: #4caf50;
+}
+
+.btn__reject {
+  margin-left: .5rem;
+  color: #f44336;
+}
+
+.btn__reject:hover {
+  color: #ff5722;
+}
+
+.table__input {
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid black;
+  font-size: calc(10px + 1vmin);
+}

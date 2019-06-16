@@ -104,9 +104,28 @@ function Table({ initialValue }) {
                                     )}
                                     {openedKeywordInput === category.name ? (
                                         <div className='table__add_keyword_input_group'>
-                                            <input type="text" value={keywordInputValue} onChange={handleKeywordInputValueChange} />
-                                            <button type="submit" name='category' disabled={!keywordInputValue}>Save</button>
-                                            <button type='button' value="Cancel" onClick={handleKeywordCancelButton}>Cancel</button>
+                                            <input
+                                                className="table__input"
+                                                type="text"
+                                                value={keywordInputValue}
+                                                onChange={handleKeywordInputValueChange}
+                                            />
+                                            <button
+                                                className="btn__accept"
+                                                type="submit"
+                                                name='category'
+                                                disabled={!keywordInputValue}
+                                            >
+                                                Save
+                                                </button>
+                                            <button
+                                                className="btn__reject"
+                                                type='button'
+                                                value="Cancel"
+                                                onClick={handleKeywordCancelButton}
+                                            >
+                                                Cancel
+                                                </button>
                                         </div>
                                     ) : (
                                             <button
@@ -125,12 +144,37 @@ function Table({ initialValue }) {
                 <div className='category_input'>
                     {categoryInputIsOpen ? (
                         <>
-                            <input type="text" value={categoryInputValue} onChange={handleCategoryInputValueChange} />
-                            <button type="submit" name='category' disabled={!categoryInputValue}>Save</button>
-                            <button type='button' value="Cancel" onClick={handleCategoryCancelButton}>Cancel</button>
+                            <input
+                                type="text"
+                                class="table__input"
+                                value={categoryInputValue}
+                                onChange={handleCategoryInputValueChange}
+                                placeholder="Type category name"
+                            />
+                            <button
+                                className="btn btn__accept"
+                                type="submit"
+                                name='category'
+                                disabled={!categoryInputValue}
+                            >
+                                Save
+                            </button>
+                            <button
+                                className="btn btn__reject"
+                                type='button'
+                                value="Cancel"
+                                onClick={handleCategoryCancelButton}
+                            >
+                                Cancel
+                            </button>
                         </>
                     ) : (
-                            <button className='btn' onClick={handleCategoryAddButton} type='button'>Add category +</button>
+                            <button
+                                className='btn'
+                                onClick={handleCategoryAddButton}
+                                type='button'>
+                                Add category +
+                                </button>
                         )}
                 </div>
             </form>

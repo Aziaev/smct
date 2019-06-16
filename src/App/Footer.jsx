@@ -1,16 +1,16 @@
 import React from 'react';
 import './Footer.css';
 
-function Footer() {
+function Footer({title, link}) {
     return (
         <div className="footer">
             <a
                 className="link"
-                href="https://github.com/Aziaev"
+                href={link}
                 target="_blank"
                 rel="noopener noreferrer"
             >
-                Github link
+                {title}
         </a>
         </div>
     );

@@ -15,7 +15,10 @@ function App() {
       <Table
         initialValue={initialValue}
       />
-      <Footer />
+      <Footer
+        title="Github link"
+        link="https://github.com/Aziaev/smct"
+      />
     </div>
   );
 }
